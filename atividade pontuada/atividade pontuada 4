@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int idade;
+    int datadenascimento;
+    
+        printf("digite sua idade : \n");
+        scanf("%d", &idade);
+        
+     system("cls || clear");
+     fflush(stdin);
+     
+     if (idade >= 18)
+     {
+         printf("IDADE : %d \n", idade);
+         printf("ACESSO PERMITIDO!!");
+     }
+     else
+     {
+         printf("IDADE : %d \n", idade);
+         printf("ACESSO NEGADO!!");
+     }
+
+     // printf("digite sua ano de nascimento : \n");
+     // scanf("%d",&datadenascimento);
+     // system("cls || clear");
+     // fflush(stdin);
+     // idade = 2023 - datadenascimento;
+     //if (idade >= 18)
+     //{
+      //printf("IDADE : %d \n", idade);
+      //printf("ACESSO PERMITIDO!!");
+    // }
+     //else
+    // {
+     //printf("IDADE : %d \n", idade);
+     //printf("ACESSO NEGADO!!");
+     //}
+     return 0;
+}
+
+     
+     
+     

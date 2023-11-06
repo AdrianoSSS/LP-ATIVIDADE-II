@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    float nota;
+    
+      printf("digite sua nota : \n");
+      scanf("%f", &nota);
+    
+    system("cls || clear");
+    fflush(stdin);
+    
+    if (nota >= 9)
+    {
+        printf("nota : %.1f \n",nota);
+        printf("EXCELENTE!!");
+    }
+    else if (nota >= 7)
+    {
+        printf("nota : %.1f \n",nota);
+        printf("BOM!!");
+    }
+    else if (nota >= 5)
+      {
+        printf("nota : %.1f \n",nota);
+        printf("RAZOAVEL!!");
+      }
+      else
+      {
+        printf("nota : %f \n",nota);
+        printf("INSUFICIENTE!!");
+      }
+      return 0;
+}
+    
+
+   

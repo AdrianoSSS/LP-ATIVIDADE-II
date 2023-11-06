@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int escolha;
+    
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("1 || Novo jogo \n");
+    printf("2 || Carregar jogo \n");
+    printf("3 || configurações \n");
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+    printf("Oque deseja : \n");
+    scanf("%d", &escolha);
+    system("cls || clear");
+    
+    switch (escolha)
+    {
+      case 1 :
+      printf("[Novo jogo]\n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      printf(" Jogar\n");
+      printf(" Dificuldade\n");
+      printf(" DLC`S\n");
+      printf(" Personalizar personagem\n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      break;
+      
+      case 2 :
+      printf("[Carregar jogo]\n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      printf("1 - Save \n");
+      printf("2 - Save \n");
+      printf("3 - Save \n");
+      printf("4 - Save \n");
+      printf("5 - Save \n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      break;
+      
+      case 3 : 
+      printf("[configurações]\n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      printf(" Controles\n");
+      printf(" sensibilidade\n");
+      printf(" Vídeo\n");
+      printf(" audío\n");
+      printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+      break;
+      
+      default:
+      printf("Opção inexistente!!");
+      break;
+    }
+    return 0;
+}
+    
+    
+    
+    
+    

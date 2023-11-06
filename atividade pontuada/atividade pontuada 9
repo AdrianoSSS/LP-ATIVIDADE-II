@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+   int numero =0;
+   int i =0;
+   int final =0;
+ 
+ printf("Digite um número: ");
+ scanf("%d", &numero);
+ system("cls || clear");
+ 
+for (i = 2; i <= numero / 2; i++)
+ {
+    if (numero % i == 0)
+    {
+       final++;
+       break;
+    }
+ }
+ 
+ if (final == 0)
+ {
+    printf("Número : %d \n", numero);
+    printf("É um número primo!!\n");
+ }
+ else
+ {
+    printf("Número : %d \n", numero);
+    printf("Não é um número primo!!\n");
+ }
+ 
+ return 0;
+}
+
+    

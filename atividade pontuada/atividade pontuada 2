@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    
+    float dinheiro;
+    int escolha;
+    float desconto;
+    float valorfinal;
+    
+       printf("~~~~~~~~~~~~~~~AVISOS~~~~~~~~~~~~~~\n");
+       printf("compras realizadas acima de 100$ \n");
+       printf("tem descontos de 10% \n");
+       printf("lembrando que é so nos dias da semana \n");
+       printf("já nos finais de semana é de 15% \n");
+       printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+       
+       printf("digite a quantida que quer gastar : \n");
+       scanf("%f", &dinheiro);
+      
+       
+    system("cls || clear");
+    fflush(stdin);
+
+       if(dinheiro < 100)
+       {
+       printf("gastou : %f \n", dinheiro);
+       printf("sem direito a descontos\n");
+       return 0;
+       }
+   
+        printf("~~~~~~~~~escolha~~~~~~~~~~\n");
+        printf("1 || DIA DE SEMANA\n");
+        printf("2 || FINAL DE SEMANA\n");
+        printf("~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+   
+      printf("deseja fazer a compra quando: \n");
+      scanf("%d", &escolha);
+     
+     system("cls || clear");
+     fflush(stdin);
+
+      switch (escolha)
+      {
+        case 1 :
+            desconto = dinheiro * 90/100;
+            valorfinal = desconto;
+            printf("dinheiro : %f \n",dinheiro);
+            printf("valor final : %f \n",valorfinal);
+            break;
+            
+        case 2 :
+            desconto = dinheiro * 85/100;
+            valorfinal = desconto;
+            printf("dinheiro : %f \n",dinheiro);
+            printf("valor final : %f \n",valorfinal);
+            break;
+            
+        default :
+        printf("compra não pode ser efetuada");
+        break;
+      }
+      return 0;
+}
+      

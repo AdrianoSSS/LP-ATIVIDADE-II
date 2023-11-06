@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+     int  numero;
+     
+     printf("Qual é a temperatura : ");
+     scanf ("%d" ,&numero);
+     system("cls || clear");
+
+     if (numero >= 25)
+     {
+         printf("clima ensolarado");
+     }
+     else if (numero < 15)
+     {
+         printf("clima chuvoso");
+     }
+     else
+     {
+         printf("clima nublado");
+     }
+     return 0;
+}
+     

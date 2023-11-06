@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int escolha;
+    
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("1 || Camiseta || preço : 20,00$ \n");
+    printf("2 || Calça || preço : 15,99$\n");
+    printf("3 || Sapato || preço : 12,99$ \n");
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+    printf("escolha um produto de preferençia : \n");
+    scanf("%d", &escolha);
+    system("cls || clear");
+    
+    switch (escolha)
+    {
+      case 1 :
+      printf("Camiseta\n");
+      printf("preço : 20,00$ \n");
+      break;
+      
+      case 2 :
+      printf("Calça\n");
+      printf("preço : 15,99$ \n");
+      break;
+      
+      case 3 : 
+      printf("Sapato\n");
+      printf("preço : 12,99$ \n");
+      break;
+      
+      default:
+      printf("Produto incorreta!!");
+      break;
+    }
+    return 0;
+}
+    
+    
+    
+    
+    
