@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int numero1;
+    int numero2;
+    int escolha;
+    int soma;
+    int subtracao;
+    printf("digite um numero : \n");
+    scanf("%d", &numero1);
+    
+    printf("digite um numero : \n");
+    scanf("%d", &numero2);
+    
+     fflush(stdin);
+    system("cls || clear");
+    
+  
+  
+   printf("~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("1 || Soma\n");
+    printf("2 || Subtração\n");
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+    printf("Quais operações deseja realizar : \n");
+    scanf("%d", &escolha);
+    
+     fflush(stdin);
+    system("cls || clear");
+    
+    switch (escolha)
+    {
+        case 1 :
+        soma = numero1 + numero2;
+        printf("valor final : %d \n",soma);
+        break;
+        
+        case 2 :
+        subtracao = numero1 - numero2;
+        printf("valor final : %d \n",subtracao);
+        break;
+        
+        default :
+        printf("Operação incorreta!!");
+        break;
+    }
+    return 0;
+}
+
+    
+  

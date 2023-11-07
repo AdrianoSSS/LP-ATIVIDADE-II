@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int i;
+    float nota;
+    int soma;
+    float media;
+    
+    system("cls || clear");
+  
+  for (i = 1; i <=3; i++)
+  {
+      printf("digite uma nota : \n",i);
+      scanf("%f", &nota);
+      if (nota >= 0);
+     {
+      soma +=nota;
+     }
+     
+     
+       system("cls || clear");
+  }
+        media = soma / 3;
+    
+    printf("Soma : %d \n ", soma);
+    printf("Média : %.1f \n", media);
+    return 0;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+   
+    int numero;
+    int par = 0;
+    int quantidade = 0;
+    int impar = 0;
+    int somageral;
+    int somapar;
+    int somaimpar;
+    float mediapar;
+    float mediaimpar;
+
+    do
+    {
+        printf("digite um número : ");
+        scanf("%d", &numero);
+        system("cls || clear");
+
+        if (numero > 0)
+        {
+            somageral += numero;
+            quantidade++;
+            if(numero < 0)
+            {
+                break;
+            }
+        }
+        
+        if (numero % 2 == 0 )
+        {
+            somapar += numero;
+            par++;
+        }
+        else
+        {
+            somaimpar += numero;
+            impar++;
+        }
+    } while (numero > 0);
+    
+    mediapar = somapar / par;
+    mediaimpar = somaimpar / impar;
+    printf("Números pares : %d \n",par);
+    printf("Números impares : %d \n",impar);
+    printf("média par : %.1f \n", mediapar);
+    printf("média impar : %.1f \n", mediaimpar);
+
+    return 0;
+}

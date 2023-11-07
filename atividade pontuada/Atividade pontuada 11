@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <ctype.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    char codigosalvo [250] = "789456"; 
+    char codigo [250];
+     system("cls || clear");
+    do
+    {
+        
+     printf("digite o codigo de acesso : \n");
+     scanf("%s", &codigo);
+      system("cls || clear");
+      
+      if(strcmp(codigo,codigosalvo) ==0)
+      {
+          printf("Seja bem-vindo!!\n");
+      }
+      else
+      {
+     printf("Acesso negado\n");
+     system("cls || clear");
+      }
+    
+    }while (strcmp(codigo,codigosalvo) !=0) ;
+    
+    return 0;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
